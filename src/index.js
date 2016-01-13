@@ -6,7 +6,7 @@
     Version: 0.0.1
     Authors: Vincent de Wit
     Date: 2016-01-13
-    Date of last modification: 2015-12-09
+    Date of last modification: 2016-01-14
     Description: NodeJS Cronjob runner
  
 ************************************************************************ */
@@ -17,6 +17,7 @@ program
   .version('0.0.1')
   .option('-c, --command <command>', 'Cron command to run')
   .option('-i, --interval <interval>', 'Interval in seconds')
+  .option('-f, --forever', 'Run script forever in background')
   .option('-d, --debug', 'Show some more information')
   .parse(process.argv);
   
